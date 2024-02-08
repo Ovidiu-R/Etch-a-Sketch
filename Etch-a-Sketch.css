@@ -9,11 +9,17 @@ body {
 
 #canvas {
     display: flex;
+    flex-wrap: wrap;
     flex-shrink: 1;
     background-color: black;
     width: 750px;
     height: 750px;
     margin-top: 20px;
+}
+
+.cell {
+    box-sizing: border-box;
+    box-shadow: 0 0 0.8px black;
 }
 
 #inputs{
@@ -34,12 +40,6 @@ body {
     gap: 20px;
 }
 
-#canvas{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-}
-
 #trailColor, #backgroundColor {
     width: 60px;
     height: 25px;
@@ -48,4 +48,6 @@ body {
 button {
     width: 60px;
     height: 25px;
+    border-radius: 8px;
+    background-color: azure;
 }
