@@ -13,13 +13,17 @@ draw.addEventListener ('click', () => {
     drawGrid(gridSize.value);
 });
 
-function drawGrid(gridSize) {
-    let cellSize = 750/gridSize;
+function drawGrid(cellsPerSide) {
+    if (cellsPerSide > 100){
+        cellsPerSide = 100;
+        gridSize.value = 100;
+    }
+    let cellSize = 750/cellsPerSide;
     if (canvas.querySelectorAll('div.cell').length > 0){
         clearCanvas();
-        drawGrid(gridSize);
+        drawGrid(cellsPerSide);
     } else {
-        for (let i=0; i<(gridSize**2); i++){
+        for (let i=0; i<(cellsPerSide**2); i++){
             let newCell = document.createElement('div');
             newCell.setAttribute('class', 'cell');
             newCell.classList.add('cell');
