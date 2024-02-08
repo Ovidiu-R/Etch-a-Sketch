@@ -40,7 +40,7 @@ body {
     background-color: black;
 }
 
-#TrailColor, #BackgroundColor {
+#trailColor, #backgroundColor {
     width: 60px;
     height: 25px;
 }
