@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="Etch-a-Sketch.js"></script>
+    <link rel="stylesheet" href="Etch-a-Sketch.css">
+</head>
+<body>
+    <div id="inputs">
+        <div id="left">
+            <div>
+                <input type="text" id="cells" size="1" maxlength="3" placeholder="16">
+                <button id="draw">Draw</button>      
+            </div>
+            <div>
+                <label for="BackgroundColor">BG color: </label>
+                <input type="color" id="BackgroundColor" value="gray">
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <label for="TrailColor">Trail color: </label>
+                <input type="color" id="TrailColor" value="yellow">
+            </div>
+            <div>
+                <label for="TrailDuration">Duration(s): </label>
+                <input type="text" name="" id="TrailDuration" size="1" maxlength="2">
+                <button>Apply</button>
+            </div>
+        </div>
+    </div>
+    <div id="canvas">
+
+    </div>
+
+</body>
+</html>
