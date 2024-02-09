@@ -51,3 +51,7 @@ button {
     border-radius: 8px;
     background-color: azure;
 }
+
+#random {
+    width: 90px;
+}
